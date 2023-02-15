@@ -27,7 +27,17 @@
     collect the coins in the time limit. Everytime you collect the coin, You get 10 points. I am complete with this game and i think it is great.</p>
  <p>Here is the code I used to take input from the keyboard and move the character on the screen:</p>
     <pre>
-    
+    def update():
+    global score
+    clock.schedule(time_up, 7.0)
+    if keyboard.left:
+        fox.x = fox.x - 6
+    elif keyboard.right:
+        fox.x = fox.x + 7
+    elif keyboard.up:
+        fox.y = fox.y - 6
+    elif keyboard.down:
+        fox.y = fox.y + 7
     </pre>
 
   </body>
